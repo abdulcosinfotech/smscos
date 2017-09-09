@@ -1,0 +1,105 @@
+/*-----------------------------------Fonts-----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
+/*-----------------------------------Fonts-----------------------------------*/
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    color: #343434;
+    background: #fefefe;
+    height: calc(100vh - 56px);
+    font-family: 'Titillium Web', sans-serif; 
+}
+button, button:focus, a, a:focus{
+    outline: none;
+}
+
+/*--------------------------------Login Page---------------------------------*/
+.form-signin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.form-signin {
+    background: #f1f1f1;
+    padding: 50px 20px;
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+}
+/*.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}*/
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*--------------------------------Login Page---------------------------------*/
+
+/*--------------------------------Main Page---------------------------------*/
+.header .navbar-nav .nav-item{    
+    color: rgba(255,255,255,.5);
+    display: block;
+    /*padding: .5rem 1rem;*/
+}
+.header .navbar-nav .nav-item .nav-text{
+    padding: .5rem 1rem;
+}    
+.header .navbar-nav .nav-item .badge{
+    padding: 10px 15px;
+    border-radius: 0;
+    font-size: 1.2rem;
+}
+.templates-list{
+    height: calc(100vh - 130px);
+    overflow: auto;
+}
+.templates-list .list-group-item{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .header .navbar-nav .nav-item{        
+        display: flex;
+        flex-direction: column;
+    }
+    .header .navbar-nav:first-child .nav-item{
+        flex-direction: column-reverse;
+        
+    }
+}
+/*--------------------------------Main Page---------------------------------*/
+
