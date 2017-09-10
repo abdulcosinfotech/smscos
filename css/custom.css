@@ -91,7 +91,7 @@ button, button:focus, a, a:focus{
     cursor: pointer;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
     .header .navbar-nav .nav-item{        
         display: flex;
         flex-direction: column;
